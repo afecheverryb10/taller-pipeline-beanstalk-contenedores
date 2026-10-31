@@ -9,7 +9,7 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Building the Docker image...          
-      - docker build -t python_application:latest .
+      - docker build -t python_app:latest .
       - docker tag python-app:latest 944731468276.dkr.ecr.us-east-1.amazonaws.com/python-app:latest
   post_build:
     commands:
